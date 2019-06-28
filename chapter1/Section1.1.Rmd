@@ -1,0 +1,63 @@
+---
+title: "Section 1.1"
+author: "johan jordaan"
+output: html_notebook
+---
+
+1. Analyse the logic forms of the following statements:
+
+    1.1  We'll have either a reading assignment or homework problems, but we won't have both homework problems and a test.
+    
+    ***
+    
+      Let :
+      + $A =$ a reading assignment
+      + $B =$ homework problems
+      + $C =$ a test
+      
+      In :
+      + We'll have either **a reading assignment** or **homework problems**, but we won't have both **homework problems** and **a test**.
+  
+  
+      Then :
+      + We'll have either $A$ or $B$, but we won't have both $A$ and $C$
+      + We'll have either $A \vee B$, but we $\neg$ $(A \wedge C)$
+      
+      And  finally :
+      + $(A \vee B) \wedge \neg (A \wedge C)$
+    
+    ***
+    
+    1.2 You won't go skiing, or you will and there won't be any snow
+
+    ***
+    
+    Let :
+    + $A =$ go skiing 
+    + $B =$ there will be snow
+    
+    In :
+    + You won't **go skiing**, or you will and there won't **be any snow**    
+
+    Then :
+    + You won't $A$, or you will and won't $B$
+    + You $\neg A$, or $A$ and $\neg B$
+    
+    And finally :
+    + $\neg A \vee (A \wedge \neg B)$
+
+
+    ***
+    
+    1.3 $\sqrt{7} \le 2$.
+
+    ***
+    
+    Let :
+    + $A \le B => A < B \vee A = B$
+
+    Then :
+    + $\sqrt{7} \le 2 => \sqrt{7} < 2 \vee \sqrt{7} = 2$
+
+
+    ***
