@@ -1734,7 +1734,7 @@ $(document).ready(function () {
 </style>
 <script>
 $(document).ready(function () {
-  window.initializeSourceEmbed("Section 1.1.Rmd");
+  window.initializeSourceEmbed("Section1.1.Rmd");
   window.initializeCodeFolding("show" === "show");
 });
 </script>
@@ -1766,7 +1766,9 @@ $(document).ready(function () {
 <!-- rnb-text-begin -->
 <ol style="list-style-type: decimal">
 <li><p>Analyse the logic forms of the following statements:</p>
-<p>1.1 We’ll have either a reading assignment or homework problems, but we won’t have both homework problems and a test.</p>
+<ol style="list-style-type: lower-alpha">
+<li>We’ll have either a reading assignment or homework problems, but we won’t have both homework problems and a test.</li>
+</ol>
 <hr />
 <p>Let :</p>
 <ul>
@@ -1788,7 +1790,9 @@ $(document).ready(function () {
 <li><span class="math inline">\((A \vee B) \wedge \neg (A \wedge C)\)</span></li>
 </ul>
 <hr />
-<p>1.2 You won’t go skiing, or you will and there won’t be any snow</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>You won’t go skiing, or you will and there won’t be any snow</li>
+</ol>
 <hr />
 <p>Let :</p>
 <ul>
@@ -1809,7 +1813,9 @@ $(document).ready(function () {
 <li><span class="math inline">\(\neg A \vee (A \wedge \neg B)\)</span></li>
 </ul>
 <hr />
-<p>1.3 <span class="math inline">\(\sqrt{7} \le 2\)</span>.</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\sqrt{7} \le 2\)</span>.</li>
+</ol>
 <hr />
 <p>Let :</p>
 <ul>
@@ -1820,10 +1826,46 @@ $(document).ready(function () {
 <li><span class="math inline">\(\sqrt{7} \le 2 =&gt; \sqrt{7} &lt; 2 \vee \sqrt{7} = 2\)</span></li>
 </ul>
 <hr /></li>
+<li><p>Analyse the logic forms of the following statements:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Either John and Bill are both telling the truth, or neither of them is.</li>
+</ol>
+<hr />
+<hr />
+<ol start="2" style="list-style-type: lower-alpha">
+<li>I’ll have either fish or chicken, but I won’t have both fish and mashed potatoes.</li>
+</ol>
+<hr />
+<hr />
+<ol start="3" style="list-style-type: lower-alpha">
+<li>3 is a common divisor of 6,9 and 15</li>
+</ol>
+<hr /></li>
+<li><p>Analyse the logic forms of the following statements:</p>
+<ol style="list-style-type: lower-alpha">
+<li>Alice and Bob are not both in the room.</li>
+</ol>
+<hr />
+<hr />
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Alice and Bob are both not in the room.</li>
+</ol>
+<hr />
+<hr />
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Either Alice or Bob is not in the room.</li>
+</ol>
+<hr />
+<hr />
+<ol start="4" style="list-style-type: lower-alpha">
+<li>Neither Alice nor Bob is in the room.</li>
+</ol>
+<hr />
+<hr /></li>
 </ol>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiU2VjdGlvbiAxLjEiCmF1dGhvcjogImpvaGFuIGpvcmRhYW4iCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjEuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICAxLjEgIFdlJ2xsIGhhdmUgZWl0aGVyIGEgcmVhZGluZyBhc3NpZ25tZW50IG9yIGhvbWV3b3JrIHByb2JsZW1zLCBidXQgd2Ugd29uJ3QgaGF2ZSBib3RoIGhvbWV3b3JrIHByb2JsZW1zIGFuZCBhIHRlc3QuCiAgICAKICAgICoqKgogICAgCiAgICAgIExldCA6CiAgICAgICsgJEEgPSQgYSByZWFkaW5nIGFzc2lnbm1lbnQKICAgICAgKyAkQiA9JCBob21ld29yayBwcm9ibGVtcwogICAgICArICRDID0kIGEgdGVzdAogICAgICAKICAgICAgSW4gOgogICAgICArIFdlJ2xsIGhhdmUgZWl0aGVyICoqYSByZWFkaW5nIGFzc2lnbm1lbnQqKiBvciAqKmhvbWV3b3JrIHByb2JsZW1zKiosIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggKipob21ld29yayBwcm9ibGVtcyoqIGFuZCAqKmEgdGVzdCoqLgogIAogIAogICAgICBUaGVuIDoKICAgICAgKyBXZSdsbCBoYXZlIGVpdGhlciAkQSQgb3IgJEIkLCBidXQgd2Ugd29uJ3QgaGF2ZSBib3RoICRBJCBhbmQgJEMkCiAgICAgICsgV2UnbGwgaGF2ZSBlaXRoZXIgJEEgXHZlZSBCJCwgYnV0IHdlICRcbmVnJCAkKEEgXHdlZGdlIEMpJAogICAgICAKICAgICAgQW5kICBmaW5hbGx5IDoKICAgICAgKyAkKEEgXHZlZSBCKSBcd2VkZ2UgXG5lZyAoQSBcd2VkZ2UgQykkCiAgICAKICAgICoqKgogICAgCiAgICAxLjIgWW91IHdvbid0IGdvIHNraWluZywgb3IgeW91IHdpbGwgYW5kIHRoZXJlIHdvbid0IGJlIGFueSBzbm93CgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRBID0kIGdvIHNraWluZyAKICAgICsgJEIgPSQgdGhlcmUgd2lsbCBiZSBzbm93CiAgICAKICAgIEluIDoKICAgICsgWW91IHdvbid0ICoqZ28gc2tpaW5nKiosIG9yIHlvdSB3aWxsIGFuZCB0aGVyZSB3b24ndCAqKmJlIGFueSBzbm93KiogICAgCgogICAgVGhlbiA6CiAgICArIFlvdSB3b24ndCAkQSQsIG9yIHlvdSB3aWxsIGFuZCB3b24ndCAkQiQKICAgICsgWW91ICRcbmVnIEEkLCBvciAkQSQgYW5kICRcbmVnIEIkCiAgICAKICAgIEFuZCBmaW5hbGx5IDoKICAgICsgJFxuZWcgQSBcdmVlIChBIFx3ZWRnZSBcbmVnIEIpJAoKCiAgICAqKioKICAgIAogICAgMS4zICRcc3FydHs3fSBcbGUgMiQuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRBIFxsZSBCID0+IEEgPCBCIFx2ZWUgQSA9IEIkCgogICAgVGhlbiA6CiAgICArICRcc3FydHs3fSBcbGUgMiA9PiBcc3FydHs3fSA8IDIgXHZlZSBcc3FydHs3fSA9IDIkCgoKICAgICoqKgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiU2VjdGlvbiAxLjEiCmF1dGhvcjogImpvaGFuIGpvcmRhYW4iCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjEuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiAgV2UnbGwgaGF2ZSBlaXRoZXIgYSByZWFkaW5nIGFzc2lnbm1lbnQgb3IgaG9tZXdvcmsgcHJvYmxlbXMsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggaG9tZXdvcmsgcHJvYmxlbXMgYW5kIGEgdGVzdC4KICAgIAogICAgKioqCiAgICAKICAgICAgTGV0IDoKICAgICAgKyAkQSA9JCBhIHJlYWRpbmcgYXNzaWdubWVudAogICAgICArICRCID0kIGhvbWV3b3JrIHByb2JsZW1zCiAgICAgICsgJEMgPSQgYSB0ZXN0CiAgICAgIAogICAgICBJbiA6CiAgICAgICsgV2UnbGwgaGF2ZSBlaXRoZXIgKiphIHJlYWRpbmcgYXNzaWdubWVudCoqIG9yICoqaG9tZXdvcmsgcHJvYmxlbXMqKiwgYnV0IHdlIHdvbid0IGhhdmUgYm90aCAqKmhvbWV3b3JrIHByb2JsZW1zKiogYW5kICoqYSB0ZXN0KiouCiAgCiAgCiAgICAgIFRoZW4gOgogICAgICArIFdlJ2xsIGhhdmUgZWl0aGVyICRBJCBvciAkQiQsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggJEEkIGFuZCAkQyQKICAgICAgKyBXZSdsbCBoYXZlIGVpdGhlciAkQSBcdmVlIEIkLCBidXQgd2UgJFxuZWckICQoQSBcd2VkZ2UgQykkCiAgICAgIAogICAgICBBbmQgIGZpbmFsbHkgOgogICAgICArICQoQSBcdmVlIEIpIFx3ZWRnZSBcbmVnIChBIFx3ZWRnZSBDKSQKICAgIAogICAgKioqCiAgICAKICAgIGIuIFlvdSB3b24ndCBnbyBza2lpbmcsIG9yIHlvdSB3aWxsIGFuZCB0aGVyZSB3b24ndCBiZSBhbnkgc25vdwoKICAgICoqKgogICAgCiAgICBMZXQgOgogICAgKyAkQSA9JCBnbyBza2lpbmcgCiAgICArICRCID0kIHRoZXJlIHdpbGwgYmUgc25vdwogICAgCiAgICBJbiA6CiAgICArIFlvdSB3b24ndCAqKmdvIHNraWluZyoqLCBvciB5b3Ugd2lsbCBhbmQgdGhlcmUgd29uJ3QgKipiZSBhbnkgc25vdyoqICAgIAoKICAgIFRoZW4gOgogICAgKyBZb3Ugd29uJ3QgJEEkLCBvciB5b3Ugd2lsbCBhbmQgd29uJ3QgJEIkCiAgICArIFlvdSAkXG5lZyBBJCwgb3IgJEEkIGFuZCAkXG5lZyBCJAogICAgCiAgICBBbmQgZmluYWxseSA6CiAgICArICRcbmVnIEEgXHZlZSAoQSBcd2VkZ2UgXG5lZyBCKSQKCgogICAgKioqCiAgICAKICAgIGMuICRcc3FydHs3fSBcbGUgMiQuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRBIFxsZSBCID0+IEEgPCBCIFx2ZWUgQSA9IEIkCgogICAgVGhlbiA6CiAgICArICRcc3FydHs3fSBcbGUgMiA9PiBcc3FydHs3fSA8IDIgXHZlZSBcc3FydHs3fSA9IDIkCgoKICAgICoqKgoKCjIuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiBFaXRoZXIgSm9obiBhbmQgQmlsbCBhcmUgYm90aCB0ZWxsaW5nIHRoZSB0cnV0aCwgb3IgbmVpdGhlciBvZiB0aGVtIGlzLgoKICAgICoqKgogICAgCgogICAgKioqCgogICAgYi4gSSdsbCBoYXZlIGVpdGhlciBmaXNoIG9yIGNoaWNrZW4sIGJ1dCBJIHdvbid0IGhhdmUgYm90aCBmaXNoIGFuZCBtYXNoZWQgcG90YXRvZXMuCgogICAgKioqCiAgICAKCiAgICAqKioKICAgIAogICAgYy4gMyBpcyBhIGNvbW1vbiBkaXZpc29yIG9mIDYsOSBhbmQgMTUKCiAgICAqKioKICAgIAozLiBBbmFseXNlIHRoZSBsb2dpYyBmb3JtcyBvZiB0aGUgZm9sbG93aW5nIHN0YXRlbWVudHM6CgogICAgYS4gQWxpY2UgYW5kIEJvYiBhcmUgbm90IGJvdGggaW4gdGhlIHJvb20uCgogICAgKioqCiAgICAKCiAgICAqKioKCiAgICBiLiBBbGljZSBhbmQgQm9iIGFyZSBib3RoIG5vdCBpbiB0aGUgcm9vbS4KCiAgICAqKioKICAgIAoKICAgICoqKgoKICAgIGMuIEVpdGhlciBBbGljZSBvciBCb2IgaXMgbm90IGluIHRoZSByb29tLgoKICAgICoqKgogICAgCgogICAgKioqCgoKICAgIGQuIE5laXRoZXIgQWxpY2Ugbm9yIEJvYiBpcyBpbiB0aGUgcm9vbS4KCiAgICAqKioKICAgIAoKICAgICoqKgoK</div>
 
 
 
