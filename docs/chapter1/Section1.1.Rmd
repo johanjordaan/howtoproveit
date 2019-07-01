@@ -69,6 +69,22 @@ output: html_notebook
 
     ***
     
+    Let :
+    + $J =$ John is telling the truth 
+    + $B =$ Bill is telling the truth
+    
+    In :
+    + Either **John is telling the truth** and **Bill is telling the truth**, or neither of then is.
+    
+    Then :
+    + Either $J$ and $B$, or neither of then is
+    + Either $J \wedge B$, or neither $J \wedge B$
+    + Either $J \wedge B$, or  $\neg(J \wedge B)$
+    
+    And finally:
+    + $(J \wedge B) \vee \neg(J \wedge B)$
+  
+
 
     ***
 
