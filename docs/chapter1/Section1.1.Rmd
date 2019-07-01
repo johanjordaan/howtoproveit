@@ -85,12 +85,23 @@ output: html_notebook
     + $(J \wedge B) \vee \neg(J \wedge B)$
   
 
-
     ***
 
     b. I'll have either fish or chicken, but I won't have both fish and mashed potatoes.
 
     ***
+    
+    Let :
+    + $F =$ I'll have fish 
+    + $C =$ I'll have chicken
+    + $M =$ I'll have masked potatoes
+    
+    Then :
+    + $F \vee C$, but I won't have $F \wedge M$
+    + $F \vee C$ , but $\neg $F \wedge M$
+    
+    And fibally:
+    + $(F \vee C) \wedge \neg (F \wedge M)$
     
 
     ***
@@ -98,6 +109,11 @@ output: html_notebook
     c. 3 is a common divisor of 6,9 and 15
 
     ***
+    
+    
+    
+    ***
+
     
 3. Analyse the logic forms of the following statements:
 
