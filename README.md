@@ -4,4 +4,4 @@ Notes and exercises from the book : How to Prove it
 
 1. Sentential Logic
 
-  1.1 [Deductive Reasoning and Logical Connectives](./docs/chapter1/Section1.1.nb.html)
+1.1 [Deductive Reasoning and Logical Connectives](https://johanjordaan.github.io/howtoproveit/chapter1/Section1.1.nb.html)
