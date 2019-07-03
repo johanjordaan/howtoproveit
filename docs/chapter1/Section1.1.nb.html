@@ -1866,7 +1866,7 @@ $(document).ready(function () {
 <li><span class="math inline">\(F \vee C\)</span>, but I won’t have <span class="math inline">\(F \wedge M\)</span></li>
 <li><span class="math inline">\(F \vee C\)</span> , but $<span class="math inline">\(F \wedge M\)</span></li>
 </ul>
-<p>And fibally:</p>
+<p>And finally:</p>
 <ul>
 <li><span class="math inline">\((F \vee C) \wedge \neg (F \wedge M)\)</span></li>
 </ul>
@@ -1875,32 +1875,87 @@ $(document).ready(function () {
 <li>3 is a common divisor of 6,9 and 15</li>
 </ol>
 <hr />
+<p><span class="math inline">\((6 \% 3 = 0) \wedge (9 \% 3 = 0) \wedge (15 \% 3 = 0)\)</span></p>
 <hr /></li>
 <li><p>Analyse the logic forms of the following statements:</p>
 <ol style="list-style-type: lower-alpha">
 <li>Alice and Bob are not both in the room.</li>
 </ol>
 <hr />
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(A =\)</span> Alice is in the room</li>
+<li><span class="math inline">\(B =\)</span> Bob is in the room</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">\(\neg (A \wedge B)\)</span></li>
+</ul>
 <hr />
 <ol start="2" style="list-style-type: lower-alpha">
 <li>Alice and Bob are both not in the room.</li>
 </ol>
 <hr />
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(A =\)</span> Alice is in the room</li>
+<li><span class="math inline">\(B =\)</span> Bob is in the room</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">\(\neg A \wedge \neg B\)</span></li>
+</ul>
 <hr />
 <ol start="3" style="list-style-type: lower-alpha">
 <li>Either Alice or Bob is not in the room.</li>
 </ol>
 <hr />
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(A =\)</span> Alice is in the room</li>
+<li><span class="math inline">\(B =\)</span> Bob is in the room</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">\(\neg A \vee \neg B\)</span></li>
+</ul>
 <hr />
 <ol start="4" style="list-style-type: lower-alpha">
 <li>Neither Alice nor Bob is in the room.</li>
 </ol>
 <hr />
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(A =\)</span> Alice is in the room</li>
+<li><span class="math inline">\(B =\)</span> Bob is in the room</li>
+</ul>
+<p>Then:</p>
+<ul>
+<li><span class="math inline">\(\neg (A \wedge B)\)</span></li>
+</ul>
+<hr /></li>
+<li><p>Which of the following expressions are well-formed formulas:</p>
+<ol style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\neg(\neg P \vee \neg\neg R)\)</span></li>
+<li><span class="math inline">\(\neg(P,Q,\wedge R)\)</span></li>
+<li><span class="math inline">\(P \wedge \neg P\)</span></li>
+<li><span class="math inline">\((P \wedge Q)(P \vee R)\)</span></li>
+</ol>
+<hr />
+<p>Valid:</p>
+<ul>
+<li>a,c</li>
+</ul>
+<p>Not Valid:</p>
+<ul>
+<li>b : Semi-colon is not part of the grammar</li>
+<li>d : Brackes not connected bty a connective <span class="math inline">\(\vee / \wedge\)</span> is not part of the grammar</li>
+</ul>
 <hr /></li>
 </ol>
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiU2VjdGlvbiAxLjEiCmF1dGhvcjogImpvaGFuIGpvcmRhYW4iCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjEuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiAgV2UnbGwgaGF2ZSBlaXRoZXIgYSByZWFkaW5nIGFzc2lnbm1lbnQgb3IgaG9tZXdvcmsgcHJvYmxlbXMsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggaG9tZXdvcmsgcHJvYmxlbXMgYW5kIGEgdGVzdC4KICAgIAogICAgKioqCiAgICAKICAgICAgTGV0IDoKICAgICAgKyAkQSA9JCBhIHJlYWRpbmcgYXNzaWdubWVudAogICAgICArICRCID0kIGhvbWV3b3JrIHByb2JsZW1zCiAgICAgICsgJEMgPSQgYSB0ZXN0CiAgICAgIAogICAgICBJbiA6CiAgICAgICsgV2UnbGwgaGF2ZSBlaXRoZXIgKiphIHJlYWRpbmcgYXNzaWdubWVudCoqIG9yICoqaG9tZXdvcmsgcHJvYmxlbXMqKiwgYnV0IHdlIHdvbid0IGhhdmUgYm90aCAqKmhvbWV3b3JrIHByb2JsZW1zKiogYW5kICoqYSB0ZXN0KiouCiAgCiAgCiAgICAgIFRoZW4gOgogICAgICArIFdlJ2xsIGhhdmUgZWl0aGVyICRBJCBvciAkQiQsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggJEEkIGFuZCAkQyQKICAgICAgKyBXZSdsbCBoYXZlIGVpdGhlciAkQSBcdmVlIEIkLCBidXQgd2UgJFxuZWckICQoQSBcd2VkZ2UgQykkCiAgICAgIAogICAgICBBbmQgIGZpbmFsbHkgOgogICAgICArICQoQSBcdmVlIEIpIFx3ZWRnZSBcbmVnIChBIFx3ZWRnZSBDKSQKICAgIAogICAgKioqCiAgICAKICAgIGIuIFlvdSB3b24ndCBnbyBza2lpbmcsIG9yIHlvdSB3aWxsIGFuZCB0aGVyZSB3b24ndCBiZSBhbnkgc25vdwoKICAgICoqKgogICAgCiAgICBMZXQgOgogICAgKyAkQSA9JCBnbyBza2lpbmcgCiAgICArICRCID0kIHRoZXJlIHdpbGwgYmUgc25vdwogICAgCiAgICBJbiA6CiAgICArIFlvdSB3b24ndCAqKmdvIHNraWluZyoqLCBvciB5b3Ugd2lsbCBhbmQgdGhlcmUgd29uJ3QgKipiZSBhbnkgc25vdyoqICAgIAoKICAgIFRoZW4gOgogICAgKyBZb3Ugd29uJ3QgJEEkLCBvciB5b3Ugd2lsbCBhbmQgd29uJ3QgJEIkCiAgICArIFlvdSAkXG5lZyBBJCwgb3IgJEEkIGFuZCAkXG5lZyBCJAogICAgCiAgICBBbmQgZmluYWxseSA6CiAgICArICRcbmVnIEEgXHZlZSAoQSBcd2VkZ2UgXG5lZyBCKSQKCgogICAgKioqCiAgICAKICAgIGMuICRcc3FydHs3fSBcbGUgMiQuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRBIFxsZSBCID0+IEEgPCBCIFx2ZWUgQSA9IEIkCgogICAgVGhlbiA6CiAgICArICRcc3FydHs3fSBcbGUgMiA9PiBcc3FydHs3fSA8IDIgXHZlZSBcc3FydHs3fSA9IDIkCgoKICAgICoqKgoKCjIuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiBFaXRoZXIgSm9obiBhbmQgQmlsbCBhcmUgYm90aCB0ZWxsaW5nIHRoZSB0cnV0aCwgb3IgbmVpdGhlciBvZiB0aGVtIGlzLgoKICAgICoqKgogICAgCiAgICBMZXQgOgogICAgKyAkSiA9JCBKb2huIGlzIHRlbGxpbmcgdGhlIHRydXRoIAogICAgKyAkQiA9JCBCaWxsIGlzIHRlbGxpbmcgdGhlIHRydXRoCiAgICAKICAgIEluIDoKICAgICsgRWl0aGVyICoqSm9obiBpcyB0ZWxsaW5nIHRoZSB0cnV0aCoqIGFuZCAqKkJpbGwgaXMgdGVsbGluZyB0aGUgdHJ1dGgqKiwgb3IgbmVpdGhlciBvZiB0aGVuIGlzLgogICAgCiAgICBUaGVuIDoKICAgICsgRWl0aGVyICRKJCBhbmQgJEIkLCBvciBuZWl0aGVyIG9mIHRoZW4gaXMKICAgICsgRWl0aGVyICRKIFx3ZWRnZSBCJCwgb3IgbmVpdGhlciAkSiBcd2VkZ2UgQiQKICAgICsgRWl0aGVyICRKIFx3ZWRnZSBCJCwgb3IgICRcbmVnKEogXHdlZGdlIEIpJAogICAgCiAgICBBbmQgZmluYWxseToKICAgICsgJChKIFx3ZWRnZSBCKSBcdmVlIFxuZWcoSiBcd2VkZ2UgQikkCiAgCgogICAgKioqCgogICAgYi4gSSdsbCBoYXZlIGVpdGhlciBmaXNoIG9yIGNoaWNrZW4sIGJ1dCBJIHdvbid0IGhhdmUgYm90aCBmaXNoIGFuZCBtYXNoZWQgcG90YXRvZXMuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRGID0kIEknbGwgaGF2ZSBmaXNoIAogICAgKyAkQyA9JCBJJ2xsIGhhdmUgY2hpY2tlbgogICAgKyAkTSA9JCBJJ2xsIGhhdmUgbWFza2VkIHBvdGF0b2VzCiAgICAKICAgIFRoZW4gOgogICAgKyAkRiBcdmVlIEMkLCBidXQgSSB3b24ndCBoYXZlICRGIFx3ZWRnZSBNJAogICAgKyAkRiBcdmVlIEMkICwgYnV0ICRcbmVnICRGIFx3ZWRnZSBNJAogICAgCiAgICBBbmQgZmliYWxseToKICAgICsgJChGIFx2ZWUgQykgXHdlZGdlIFxuZWcgKEYgXHdlZGdlIE0pJAogICAgCgogICAgKioqCiAgICAKICAgIGMuIDMgaXMgYSBjb21tb24gZGl2aXNvciBvZiA2LDkgYW5kIDE1CgogICAgKioqCiAgICAKICAgIAogICAgCiAgICAqKioKCiAgICAKMy4gQW5hbHlzZSB0aGUgbG9naWMgZm9ybXMgb2YgdGhlIGZvbGxvd2luZyBzdGF0ZW1lbnRzOgoKICAgIGEuIEFsaWNlIGFuZCBCb2IgYXJlIG5vdCBib3RoIGluIHRoZSByb29tLgoKICAgICoqKgogICAgCgogICAgKioqCgogICAgYi4gQWxpY2UgYW5kIEJvYiBhcmUgYm90aCBub3QgaW4gdGhlIHJvb20uCgogICAgKioqCiAgICAKCiAgICAqKioKCiAgICBjLiBFaXRoZXIgQWxpY2Ugb3IgQm9iIGlzIG5vdCBpbiB0aGUgcm9vbS4KCiAgICAqKioKICAgIAoKICAgICoqKgoKCiAgICBkLiBOZWl0aGVyIEFsaWNlIG5vciBCb2IgaXMgaW4gdGhlIHJvb20uCgogICAgKioqCiAgICAKCiAgICAqKioKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiU2VjdGlvbiAxLjEiCmF1dGhvcjogImpvaGFuIGpvcmRhYW4iCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjEuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiAgV2UnbGwgaGF2ZSBlaXRoZXIgYSByZWFkaW5nIGFzc2lnbm1lbnQgb3IgaG9tZXdvcmsgcHJvYmxlbXMsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggaG9tZXdvcmsgcHJvYmxlbXMgYW5kIGEgdGVzdC4KICAgIAogICAgKioqCiAgICAKICAgICAgTGV0IDoKICAgICAgKyAkQSA9JCBhIHJlYWRpbmcgYXNzaWdubWVudAogICAgICArICRCID0kIGhvbWV3b3JrIHByb2JsZW1zCiAgICAgICsgJEMgPSQgYSB0ZXN0CiAgICAgIAogICAgICBJbiA6CiAgICAgICsgV2UnbGwgaGF2ZSBlaXRoZXIgKiphIHJlYWRpbmcgYXNzaWdubWVudCoqIG9yICoqaG9tZXdvcmsgcHJvYmxlbXMqKiwgYnV0IHdlIHdvbid0IGhhdmUgYm90aCAqKmhvbWV3b3JrIHByb2JsZW1zKiogYW5kICoqYSB0ZXN0KiouCiAgCiAgCiAgICAgIFRoZW4gOgogICAgICArIFdlJ2xsIGhhdmUgZWl0aGVyICRBJCBvciAkQiQsIGJ1dCB3ZSB3b24ndCBoYXZlIGJvdGggJEEkIGFuZCAkQyQKICAgICAgKyBXZSdsbCBoYXZlIGVpdGhlciAkQSBcdmVlIEIkLCBidXQgd2UgJFxuZWckICQoQSBcd2VkZ2UgQykkCiAgICAgIAogICAgICBBbmQgIGZpbmFsbHkgOgogICAgICArICQoQSBcdmVlIEIpIFx3ZWRnZSBcbmVnIChBIFx3ZWRnZSBDKSQKICAgIAogICAgKioqCiAgICAKICAgIGIuIFlvdSB3b24ndCBnbyBza2lpbmcsIG9yIHlvdSB3aWxsIGFuZCB0aGVyZSB3b24ndCBiZSBhbnkgc25vdwoKICAgICoqKgogICAgCiAgICBMZXQgOgogICAgKyAkQSA9JCBnbyBza2lpbmcgCiAgICArICRCID0kIHRoZXJlIHdpbGwgYmUgc25vdwogICAgCiAgICBJbiA6CiAgICArIFlvdSB3b24ndCAqKmdvIHNraWluZyoqLCBvciB5b3Ugd2lsbCBhbmQgdGhlcmUgd29uJ3QgKipiZSBhbnkgc25vdyoqICAgIAoKICAgIFRoZW4gOgogICAgKyBZb3Ugd29uJ3QgJEEkLCBvciB5b3Ugd2lsbCBhbmQgd29uJ3QgJEIkCiAgICArIFlvdSAkXG5lZyBBJCwgb3IgJEEkIGFuZCAkXG5lZyBCJAogICAgCiAgICBBbmQgZmluYWxseSA6CiAgICArICRcbmVnIEEgXHZlZSAoQSBcd2VkZ2UgXG5lZyBCKSQKCgogICAgKioqCiAgICAKICAgIGMuICRcc3FydHs3fSBcbGUgMiQuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRBIFxsZSBCID0+IEEgPCBCIFx2ZWUgQSA9IEIkCgogICAgVGhlbiA6CiAgICArICRcc3FydHs3fSBcbGUgMiA9PiBcc3FydHs3fSA8IDIgXHZlZSBcc3FydHs3fSA9IDIkCgoKICAgICoqKgoKCjIuIEFuYWx5c2UgdGhlIGxvZ2ljIGZvcm1zIG9mIHRoZSBmb2xsb3dpbmcgc3RhdGVtZW50czoKCiAgICBhLiBFaXRoZXIgSm9obiBhbmQgQmlsbCBhcmUgYm90aCB0ZWxsaW5nIHRoZSB0cnV0aCwgb3IgbmVpdGhlciBvZiB0aGVtIGlzLgoKICAgICoqKgogICAgCiAgICBMZXQgOgogICAgKyAkSiA9JCBKb2huIGlzIHRlbGxpbmcgdGhlIHRydXRoIAogICAgKyAkQiA9JCBCaWxsIGlzIHRlbGxpbmcgdGhlIHRydXRoCiAgICAKICAgIEluIDoKICAgICsgRWl0aGVyICoqSm9obiBpcyB0ZWxsaW5nIHRoZSB0cnV0aCoqIGFuZCAqKkJpbGwgaXMgdGVsbGluZyB0aGUgdHJ1dGgqKiwgb3IgbmVpdGhlciBvZiB0aGVuIGlzLgogICAgCiAgICBUaGVuIDoKICAgICsgRWl0aGVyICRKJCBhbmQgJEIkLCBvciBuZWl0aGVyIG9mIHRoZW4gaXMKICAgICsgRWl0aGVyICRKIFx3ZWRnZSBCJCwgb3IgbmVpdGhlciAkSiBcd2VkZ2UgQiQKICAgICsgRWl0aGVyICRKIFx3ZWRnZSBCJCwgb3IgICRcbmVnKEogXHdlZGdlIEIpJAogICAgCiAgICBBbmQgZmluYWxseToKICAgICsgJChKIFx3ZWRnZSBCKSBcdmVlIFxuZWcoSiBcd2VkZ2UgQikkCiAgCgogICAgKioqCgogICAgYi4gSSdsbCBoYXZlIGVpdGhlciBmaXNoIG9yIGNoaWNrZW4sIGJ1dCBJIHdvbid0IGhhdmUgYm90aCBmaXNoIGFuZCBtYXNoZWQgcG90YXRvZXMuCgogICAgKioqCiAgICAKICAgIExldCA6CiAgICArICRGID0kIEknbGwgaGF2ZSBmaXNoIAogICAgKyAkQyA9JCBJJ2xsIGhhdmUgY2hpY2tlbgogICAgKyAkTSA9JCBJJ2xsIGhhdmUgbWFza2VkIHBvdGF0b2VzCiAgICAKICAgIFRoZW4gOgogICAgKyAkRiBcdmVlIEMkLCBidXQgSSB3b24ndCBoYXZlICRGIFx3ZWRnZSBNJAogICAgKyAkRiBcdmVlIEMkICwgYnV0ICRcbmVnICRGIFx3ZWRnZSBNJAogICAgCiAgICBBbmQgZmluYWxseToKICAgICsgJChGIFx2ZWUgQykgXHdlZGdlIFxuZWcgKEYgXHdlZGdlIE0pJAogICAgCgogICAgKioqCiAgICAKICAgIGMuIDMgaXMgYSBjb21tb24gZGl2aXNvciBvZiA2LDkgYW5kIDE1CgogICAgKioqCiAgICAKICAgIAogICAgJCg2IFwlIDMgPSAwKSBcd2VkZ2UgKDkgXCUgMyA9IDApIFx3ZWRnZSAoMTUgXCUgMyA9IDApJCAgCiAgICAKICAgICoqKgoKICAgIAozLiBBbmFseXNlIHRoZSBsb2dpYyBmb3JtcyBvZiB0aGUgZm9sbG93aW5nIHN0YXRlbWVudHM6CgogICAgYS4gQWxpY2UgYW5kIEJvYiBhcmUgbm90IGJvdGggaW4gdGhlIHJvb20uCgogICAgKioqCiAgICAKICAgIExldDoKICAgICsgJEEgPSQgQWxpY2UgaXMgaW4gdGhlIHJvb20KICAgICsgJEIgPSQgQm9iIGlzIGluIHRoZSByb29tCiAgICAKICAgIFRoZW46CiAgICArICRcbmVnIChBIFx3ZWRnZSBCKSQgCiAgICAKICAgICoqKgoKICAgIGIuIEFsaWNlIGFuZCBCb2IgYXJlIGJvdGggbm90IGluIHRoZSByb29tLgoKICAgICoqKgoKICAgIExldDoKICAgICsgJEEgPSQgQWxpY2UgaXMgaW4gdGhlIHJvb20KICAgICsgJEIgPSQgQm9iIGlzIGluIHRoZSByb29tCgogICAgVGhlbjoKICAgICsgJFxuZWcgQSBcd2VkZ2UgXG5lZyBCJAogICAgCgogICAgKioqCgogICAgYy4gRWl0aGVyIEFsaWNlIG9yIEJvYiBpcyBub3QgaW4gdGhlIHJvb20uCgogICAgKioqCiAgICAKICAgIExldDoKICAgICsgJEEgPSQgQWxpY2UgaXMgaW4gdGhlIHJvb20KICAgICsgJEIgPSQgQm9iIGlzIGluIHRoZSByb29tCgogICAgVGhlbjoKICAgICsgJFxuZWcgQSBcdmVlIFxuZWcgQiQKCiAgICAqKioKCgogICAgZC4gTmVpdGhlciBBbGljZSBub3IgQm9iIGlzIGluIHRoZSByb29tLgoKICAgICoqKgogICAgCiAgICBMZXQ6CiAgICArICRBID0kIEFsaWNlIGlzIGluIHRoZSByb29tCiAgICArICRCID0kIEJvYiBpcyBpbiB0aGUgcm9vbQoKICAgIFRoZW46CiAgICArICRcbmVnIChBIFx3ZWRnZSBCKSQKCiAgICAqKioKCjQuIFdoaWNoIG9mIHRoZSBmb2xsb3dpbmcgZXhwcmVzc2lvbnMgYXJlIHdlbGwtZm9ybWVkIGZvcm11bGFzOgoKICAgIGEuICRcbmVnKFxuZWcgUCBcdmVlIFxuZWdcbmVnIFIpJAogICAgYi4gJFxuZWcoUCxRLFx3ZWRnZSBSKSQKICAgIGMuICRQIFx3ZWRnZSBcbmVnIFAkCiAgICBkLiAkKFAgXHdlZGdlIFEpKFAgXHZlZSBSKSQKCgogICAgKioqCiAgICBWYWxpZDogCiAgICArIGEsYwogICAgCiAgICBOb3QgVmFsaWQ6IAogICAgKyBiIDogU2VtaS1jb2xvbiBpcyBub3QgcGFydCBvZiB0aGUgZ3JhbW1hcgogICAgKyBkIDogQnJhY2tlcyBub3QgY29ubmVjdGVkIGJ0eSBhIGNvbm5lY3RpdmUgJFx2ZWUgIC8gIFx3ZWRnZSQgaXMgbm90IHBhcnQgb2YgdGhlIGdyYW1tYXIKCiAgICAqKioKICAgIAogICAgCiAgICAK</div>
 
 
 

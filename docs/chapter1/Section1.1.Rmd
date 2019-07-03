@@ -100,7 +100,7 @@ output: html_notebook
     + $F \vee C$, but I won't have $F \wedge M$
     + $F \vee C$ , but $\neg $F \wedge M$
     
-    And fibally:
+    And finally:
     + $(F \vee C) \wedge \neg (F \wedge M)$
     
 
@@ -111,6 +111,7 @@ output: html_notebook
     ***
     
     
+    $(6 \% 3 = 0) \wedge (9 \% 3 = 0) \wedge (15 \% 3 = 0)$  
     
     ***
 
@@ -121,12 +122,25 @@ output: html_notebook
 
     ***
     
-
+    Let:
+    + $A =$ Alice is in the room
+    + $B =$ Bob is in the room
+    
+    Then:
+    + $\neg (A \wedge B)$ 
+    
     ***
 
     b. Alice and Bob are both not in the room.
 
     ***
+
+    Let:
+    + $A =$ Alice is in the room
+    + $B =$ Bob is in the room
+
+    Then:
+    + $\neg A \wedge \neg B$
     
 
     ***
@@ -135,6 +149,12 @@ output: html_notebook
 
     ***
     
+    Let:
+    + $A =$ Alice is in the room
+    + $B =$ Bob is in the room
+
+    Then:
+    + $\neg A \vee \neg B$
 
     ***
 
@@ -143,6 +163,32 @@ output: html_notebook
 
     ***
     
+    Let:
+    + $A =$ Alice is in the room
+    + $B =$ Bob is in the room
+
+    Then:
+    + $\neg (A \wedge B)$
 
     ***
 
+4. Which of the following expressions are well-formed formulas:
+
+    a. $\neg(\neg P \vee \neg\neg R)$
+    b. $\neg(P,Q,\wedge R)$
+    c. $P \wedge \neg P$
+    d. $(P \wedge Q)(P \vee R)$
+
+
+    ***
+    Valid: 
+    + a,c
+    
+    Not Valid: 
+    + b : Semi-colon is not part of the grammar
+    + d : Brackes not connected bty a connective $\vee  /  \wedge$ is not part of the grammar
+
+    ***
+    
+    
+    
